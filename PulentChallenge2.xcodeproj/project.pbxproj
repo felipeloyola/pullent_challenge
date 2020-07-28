@@ -10,6 +10,18 @@
 		129E025824CFAABE00CFCD03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E025724CFAABE00CFCD03 /* AppDelegate.swift */; };
 		129E026124CFAAC200CFCD03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 129E026024CFAAC200CFCD03 /* Assets.xcassets */; };
 		129E026424CFAAC200CFCD03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 129E026224CFAAC200CFCD03 /* LaunchScreen.storyboard */; };
+		129E028224D0E01800CFCD03 /* HomeInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E027C24D0E01800CFCD03 /* HomeInterfaces.swift */; };
+		129E028324D0E01900CFCD03 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E027D24D0E01800CFCD03 /* HomePresenter.swift */; };
+		129E028424D0E01900CFCD03 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E027E24D0E01800CFCD03 /* HomeViewController.swift */; };
+		129E028524D0E01900CFCD03 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E027F24D0E01800CFCD03 /* HomeInteractor.swift */; };
+		129E028624D0E01900CFCD03 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 129E028024D0E01800CFCD03 /* HomeViewController.xib */; };
+		129E028724D0E01900CFCD03 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E028124D0E01800CFCD03 /* HomeWireframe.swift */; };
+		129E028F24D0E0CB00CFCD03 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E028924D0E0CB00CFCD03 /* UIStoryboardExtension.swift */; };
+		129E029024D0E0CB00CFCD03 /* FormatterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E028A24D0E0CB00CFCD03 /* FormatterInterface.swift */; };
+		129E029124D0E0CB00CFCD03 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E028B24D0E0CB00CFCD03 /* PresenterInterface.swift */; };
+		129E029224D0E0CB00CFCD03 /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E028C24D0E0CB00CFCD03 /* InteractorInterface.swift */; };
+		129E029324D0E0CB00CFCD03 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E028D24D0E0CB00CFCD03 /* ViewInterface.swift */; };
+		129E029424D0E0CB00CFCD03 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E028E24D0E0CB00CFCD03 /* BaseWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +42,18 @@
 		129E026524CFAAC200CFCD03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		129E026A24CFAAC200CFCD03 /* PulentChallenge2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulentChallenge2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		129E027024CFAAC200CFCD03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		129E027C24D0E01800CFCD03 /* HomeInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInterfaces.swift; sourceTree = "<group>"; };
+		129E027D24D0E01800CFCD03 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		129E027E24D0E01800CFCD03 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		129E027F24D0E01800CFCD03 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		129E028024D0E01800CFCD03 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		129E028124D0E01800CFCD03 /* HomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
+		129E028924D0E0CB00CFCD03 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		129E028A24D0E0CB00CFCD03 /* FormatterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatterInterface.swift; sourceTree = "<group>"; };
+		129E028B24D0E0CB00CFCD03 /* PresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		129E028C24D0E0CB00CFCD03 /* InteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		129E028D24D0E0CB00CFCD03 /* ViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		129E028E24D0E0CB00CFCD03 /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +95,7 @@
 		129E025624CFAABE00CFCD03 /* PulentChallenge2 */ = {
 			isa = PBXGroup;
 			children = (
+				129E028824D0E09F00CFCD03 /* VIPER */,
 				129E027A24CFB1A200CFCD03 /* Scenes */,
 				129E025724CFAABE00CFCD03 /* AppDelegate.swift */,
 				129E026024CFAAC200CFCD03 /* Assets.xcassets */,
@@ -91,8 +116,35 @@
 		129E027A24CFB1A200CFCD03 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				129E027B24D0DFF500CFCD03 /* Home */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		129E027B24D0DFF500CFCD03 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				129E027C24D0E01800CFCD03 /* HomeInterfaces.swift */,
+				129E027D24D0E01800CFCD03 /* HomePresenter.swift */,
+				129E027E24D0E01800CFCD03 /* HomeViewController.swift */,
+				129E027F24D0E01800CFCD03 /* HomeInteractor.swift */,
+				129E028024D0E01800CFCD03 /* HomeViewController.xib */,
+				129E028124D0E01800CFCD03 /* HomeWireframe.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		129E028824D0E09F00CFCD03 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				129E028E24D0E0CB00CFCD03 /* BaseWireframe.swift */,
+				129E028A24D0E0CB00CFCD03 /* FormatterInterface.swift */,
+				129E028C24D0E0CB00CFCD03 /* InteractorInterface.swift */,
+				129E028B24D0E0CB00CFCD03 /* PresenterInterface.swift */,
+				129E028924D0E0CB00CFCD03 /* UIStoryboardExtension.swift */,
+				129E028D24D0E0CB00CFCD03 /* ViewInterface.swift */,
+			);
+			path = VIPER;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +231,7 @@
 			files = (
 				129E026424CFAAC200CFCD03 /* LaunchScreen.storyboard in Resources */,
 				129E026124CFAAC200CFCD03 /* Assets.xcassets in Resources */,
+				129E028624D0E01900CFCD03 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +270,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129E029024D0E0CB00CFCD03 /* FormatterInterface.swift in Sources */,
+				129E028324D0E01900CFCD03 /* HomePresenter.swift in Sources */,
+				129E028224D0E01800CFCD03 /* HomeInterfaces.swift in Sources */,
+				129E029424D0E0CB00CFCD03 /* BaseWireframe.swift in Sources */,
 				129E025824CFAABE00CFCD03 /* AppDelegate.swift in Sources */,
+				129E028524D0E01900CFCD03 /* HomeInteractor.swift in Sources */,
+				129E028424D0E01900CFCD03 /* HomeViewController.swift in Sources */,
+				129E029224D0E0CB00CFCD03 /* InteractorInterface.swift in Sources */,
+				129E028724D0E01900CFCD03 /* HomeWireframe.swift in Sources */,
+				129E028F24D0E0CB00CFCD03 /* UIStoryboardExtension.swift in Sources */,
+				129E029124D0E0CB00CFCD03 /* PresenterInterface.swift in Sources */,
+				129E029324D0E0CB00CFCD03 /* ViewInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
