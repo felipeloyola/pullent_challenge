@@ -8,12 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		129E025824CFAABE00CFCD03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E025724CFAABE00CFCD03 /* AppDelegate.swift */; };
-		129E025A24CFAABE00CFCD03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E025924CFAABE00CFCD03 /* SceneDelegate.swift */; };
-		129E025C24CFAABE00CFCD03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E025B24CFAABE00CFCD03 /* ViewController.swift */; };
-		129E025F24CFAABE00CFCD03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 129E025D24CFAABE00CFCD03 /* Main.storyboard */; };
 		129E026124CFAAC200CFCD03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 129E026024CFAAC200CFCD03 /* Assets.xcassets */; };
 		129E026424CFAAC200CFCD03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 129E026224CFAAC200CFCD03 /* LaunchScreen.storyboard */; };
-		129E026F24CFAAC200CFCD03 /* PulentChallenge2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E026E24CFAAC200CFCD03 /* PulentChallenge2Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,14 +25,10 @@
 /* Begin PBXFileReference section */
 		129E025424CFAABE00CFCD03 /* PulentChallenge2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulentChallenge2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		129E025724CFAABE00CFCD03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		129E025924CFAABE00CFCD03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		129E025B24CFAABE00CFCD03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		129E025E24CFAABE00CFCD03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		129E026024CFAAC200CFCD03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		129E026324CFAAC200CFCD03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		129E026524CFAAC200CFCD03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		129E026A24CFAAC200CFCD03 /* PulentChallenge2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulentChallenge2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		129E026E24CFAAC200CFCD03 /* PulentChallenge2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulentChallenge2Tests.swift; sourceTree = "<group>"; };
 		129E027024CFAAC200CFCD03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,10 +71,8 @@
 		129E025624CFAABE00CFCD03 /* PulentChallenge2 */ = {
 			isa = PBXGroup;
 			children = (
+				129E027A24CFB1A200CFCD03 /* Scenes */,
 				129E025724CFAABE00CFCD03 /* AppDelegate.swift */,
-				129E025924CFAABE00CFCD03 /* SceneDelegate.swift */,
-				129E025B24CFAABE00CFCD03 /* ViewController.swift */,
-				129E025D24CFAABE00CFCD03 /* Main.storyboard */,
 				129E026024CFAAC200CFCD03 /* Assets.xcassets */,
 				129E026224CFAAC200CFCD03 /* LaunchScreen.storyboard */,
 				129E026524CFAAC200CFCD03 /* Info.plist */,
@@ -93,10 +83,16 @@
 		129E026D24CFAAC200CFCD03 /* PulentChallenge2Tests */ = {
 			isa = PBXGroup;
 			children = (
-				129E026E24CFAAC200CFCD03 /* PulentChallenge2Tests.swift */,
 				129E027024CFAAC200CFCD03 /* Info.plist */,
 			);
 			path = PulentChallenge2Tests;
+			sourceTree = "<group>";
+		};
+		129E027A24CFB1A200CFCD03 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +105,7 @@
 				129E025024CFAABE00CFCD03 /* Sources */,
 				129E025124CFAABE00CFCD03 /* Frameworks */,
 				129E025224CFAABE00CFCD03 /* Resources */,
+				129E027924CFAEA000CFCD03 /* swiftlint */,
 			);
 			buildRules = (
 			);
@@ -182,7 +179,6 @@
 			files = (
 				129E026424CFAAC200CFCD03 /* LaunchScreen.storyboard in Resources */,
 				129E026124CFAAC200CFCD03 /* Assets.xcassets in Resources */,
-				129E025F24CFAABE00CFCD03 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +191,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		129E027924CFAEA000CFCD03 /* swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		129E025024CFAABE00CFCD03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				129E025C24CFAABE00CFCD03 /* ViewController.swift in Sources */,
 				129E025824CFAABE00CFCD03 /* AppDelegate.swift in Sources */,
-				129E025A24CFAABE00CFCD03 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +225,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				129E026F24CFAAC200CFCD03 /* PulentChallenge2Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +239,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		129E025D24CFAABE00CFCD03 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				129E025E24CFAABE00CFCD03 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		129E026224CFAAC200CFCD03 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
