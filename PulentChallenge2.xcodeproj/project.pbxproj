@@ -29,6 +29,12 @@
 		129E02A624D0E88800CFCD03 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 129E02A424D0E88800CFCD03 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		129E02A924D0EF8000CFCD03 /* SongSearchResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E02A824D0EF8000CFCD03 /* SongSearchResponseModel.swift */; };
 		129E02AE24D0FFF300CFCD03 /* SongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E02AD24D0FFF300CFCD03 /* SongViewModel.swift */; };
+		129E02B624D10EA000CFCD03 /* AlbumInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E02B024D10EA000CFCD03 /* AlbumInterfaces.swift */; };
+		129E02B724D10EA000CFCD03 /* AlbumPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E02B124D10EA000CFCD03 /* AlbumPresenter.swift */; };
+		129E02B824D10EA000CFCD03 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E02B224D10EA000CFCD03 /* AlbumViewController.swift */; };
+		129E02B924D10EA000CFCD03 /* AlbumInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E02B324D10EA000CFCD03 /* AlbumInteractor.swift */; };
+		129E02BA24D10EA000CFCD03 /* AlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 129E02B424D10EA000CFCD03 /* AlbumViewController.xib */; };
+		129E02BB24D10EA000CFCD03 /* AlbumWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E02B524D10EA000CFCD03 /* AlbumWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +87,12 @@
 		129E02A424D0E88800CFCD03 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		129E02A824D0EF8000CFCD03 /* SongSearchResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongSearchResponseModel.swift; path = ../Service/SongSearchResponseModel.swift; sourceTree = "<group>"; };
 		129E02AD24D0FFF300CFCD03 /* SongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewModel.swift; sourceTree = "<group>"; };
+		129E02B024D10EA000CFCD03 /* AlbumInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumInterfaces.swift; sourceTree = "<group>"; };
+		129E02B124D10EA000CFCD03 /* AlbumPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPresenter.swift; sourceTree = "<group>"; };
+		129E02B224D10EA000CFCD03 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		129E02B324D10EA000CFCD03 /* AlbumInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumInteractor.swift; sourceTree = "<group>"; };
+		129E02B424D10EA000CFCD03 /* AlbumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumViewController.xib; sourceTree = "<group>"; };
+		129E02B524D10EA000CFCD03 /* AlbumWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumWireframe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +158,7 @@
 		129E027A24CFB1A200CFCD03 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				129E02AF24D10E5B00CFCD03 /* Album */,
 				129E027B24D0DFF500CFCD03 /* Home */,
 			);
 			path = Scenes;
@@ -219,6 +232,19 @@
 				129E02AD24D0FFF300CFCD03 /* SongViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		129E02AF24D10E5B00CFCD03 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				129E02B024D10EA000CFCD03 /* AlbumInterfaces.swift */,
+				129E02B124D10EA000CFCD03 /* AlbumPresenter.swift */,
+				129E02B224D10EA000CFCD03 /* AlbumViewController.swift */,
+				129E02B324D10EA000CFCD03 /* AlbumInteractor.swift */,
+				129E02B424D10EA000CFCD03 /* AlbumViewController.xib */,
+				129E02B524D10EA000CFCD03 /* AlbumWireframe.swift */,
+			);
+			path = Album;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +335,7 @@
 				129E026424CFAAC200CFCD03 /* LaunchScreen.storyboard in Resources */,
 				129E026124CFAAC200CFCD03 /* Assets.xcassets in Resources */,
 				129E028624D0E01900CFCD03 /* HomeViewController.xib in Resources */,
+				129E02BA24D10EA000CFCD03 /* AlbumViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,8 +397,10 @@
 				129E029024D0E0CB00CFCD03 /* FormatterInterface.swift in Sources */,
 				129E029924D0E41800CFCD03 /* SongCell.swift in Sources */,
 				129E028324D0E01900CFCD03 /* HomePresenter.swift in Sources */,
+				129E02B724D10EA000CFCD03 /* AlbumPresenter.swift in Sources */,
 				129E028224D0E01800CFCD03 /* HomeInterfaces.swift in Sources */,
 				129E02A924D0EF8000CFCD03 /* SongSearchResponseModel.swift in Sources */,
+				129E02B624D10EA000CFCD03 /* AlbumInterfaces.swift in Sources */,
 				129E029424D0E0CB00CFCD03 /* BaseWireframe.swift in Sources */,
 				129E02A124D0E63D00CFCD03 /* SongModel.swift in Sources */,
 				129E02AE24D0FFF300CFCD03 /* SongViewModel.swift in Sources */,
@@ -379,8 +408,11 @@
 				129E028524D0E01900CFCD03 /* HomeInteractor.swift in Sources */,
 				129E028424D0E01900CFCD03 /* HomeViewController.swift in Sources */,
 				129E029224D0E0CB00CFCD03 /* InteractorInterface.swift in Sources */,
+				129E02BB24D10EA000CFCD03 /* AlbumWireframe.swift in Sources */,
 				129E028724D0E01900CFCD03 /* HomeWireframe.swift in Sources */,
+				129E02B924D10EA000CFCD03 /* AlbumInteractor.swift in Sources */,
 				129E029124D0E0CB00CFCD03 /* PresenterInterface.swift in Sources */,
+				129E02B824D10EA000CFCD03 /* AlbumViewController.swift in Sources */,
 				129E029324D0E0CB00CFCD03 /* ViewInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
