@@ -11,6 +11,7 @@ import UIKit
 
 protocol ISongService {
     func searchSongsBy(term: String, success: @escaping ([SongModel]) -> Void, error: @escaping () -> Void)
+    func getAlbumSongs(albumId: Int, success: @escaping ([SongModel]) -> Void, error: @escaping () -> Void)
 }
 
 class SongService: NSObject, ISongService {
@@ -31,6 +32,22 @@ class SongService: NSObject, ISongService {
             case .failure(let error):
                 print(error)
                 //error( )
+            }
+        }
+    }
+
+    func getAlbumSongs(albumId: Int, success: @escaping ([SongModel]) -> Void, error: @escaping () -> Void) {
+        let url: String = "https://itunes.apple.com/search?id="+String(albumId)+"&entity=song&media=music"
+        AF.request(url).responseData { response in
+            switch response.result {
+            case .success(let data):
+                do {
+                    let response = try JSONDecoder().decode(SongSearchResponseModel.self, from: data)
+                    success(response.results)} catch {
+                }
+
+            case .failure(let error):
+                print(error)
             }
         }
     }
