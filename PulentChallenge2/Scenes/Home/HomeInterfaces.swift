@@ -1,4 +1,3 @@
-//
 //  HomeInterfaces.swift
 //  PulentChallenge2
 //
@@ -24,8 +23,6 @@ protocol HomePresenterInterface: PresenterInterface {
     func requestSearch(text: String)
     func selectSong(song: SongViewModel)
 }
-
-
 
 protocol HomeInteractorInterface: InteractorInterface {
     func searchSongsBy(term: String)

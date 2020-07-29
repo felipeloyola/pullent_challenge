@@ -11,7 +11,6 @@
 import UIKit
 
 final class HomeWireframe: BaseWireframe {
-
     // MARK: - Module setup -
 
     init() {
@@ -24,7 +23,6 @@ final class HomeWireframe: BaseWireframe {
         interactor.output = presenter
         moduleViewController.presenter = presenter
     }
-
 }
 
 // MARK: - Extensions -

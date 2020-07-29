@@ -9,25 +9,22 @@
 import Alamofire
 import UIKit
 
-
-protocol ISongService{
+protocol ISongService {
     func searchSongsBy(term: String, success: @escaping ([SongModel]) -> Void, error: @escaping () -> Void)
 }
 
-
 class SongService: NSObject, ISongService {
+    func searchSongsBy(term: String, success: @escaping ([SongModel]) -> Void, error: @escaping () -> Void) {
+        let escapedTerm: String = term.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? ""
 
-    func searchSongsBy(term: String, success: @escaping ([SongModel]) -> Void, error: @escaping () -> Void){
-
-        let escapedTerm:String = term.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? ""
-
-        AF.request("https://itunes.apple.com/search?term=" + escapedTerm + "&mediaType=music&limit=20").responseData { response in
-            switch(response.result){
+        let url: String = "https://itunes.apple.com/search?term=" +
+            escapedTerm + "&mediaType=music&limit=20"
+        AF.request(url).responseData { response in
+            switch response.result {
             case .success(let data):
-                do{
+                do {
                     let response = try JSONDecoder().decode(SongSearchResponseModel.self, from: data)
-                    success(response.results)
-                }catch{
+                    success(response.results)} catch {
                     //error()
                 }
 

@@ -11,7 +11,6 @@
 import Foundation
 
 final class HomePresenter {
-
     // MARK: - Private properties -
 
     private unowned let view: HomeViewInterface

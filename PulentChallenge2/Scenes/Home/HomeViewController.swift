@@ -11,13 +11,11 @@
 import UIKit
 
 final class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
-
     // MARK: - Public properties -
 
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var searchBar: UISearchBar!
-    var songs:[SongViewModel] = []
-
+    var songs: [SongViewModel] = []
     var presenter: HomePresenterInterface!
 
     // MARK: - Lifecycle -
@@ -50,7 +48,9 @@ final class HomeViewController: UIViewController, UITableViewDelegate, UITableVi
     }
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        self.presenter.requestSearch(text: searchText)
+        if searchText.count > 5 {
+            self.presenter.requestSearch(text: searchText)
+        }
     }
 }
 

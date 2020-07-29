@@ -7,8 +7,6 @@
 //
 
 struct SongSearchResponseModel: Codable {
-
-    let resultCount:Int
+    let resultCount: Int
     let results: [SongModel]
-
 }
