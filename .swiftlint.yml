@@ -45,8 +45,6 @@ opt_in_rules:
   - override_in_extension
   - pattern_matching_keywords
   - private_action
-  - private_outlet
-  - prohibited_interface_builder
   - prohibited_super_call
   - quick_discouraged_call
   - quick_discouraged_focused_test
@@ -58,7 +56,6 @@ opt_in_rules:
   - sorted_first_last
   - sorted_imports
   - static_operator
-  - strong_iboutlet
   - toggle_bool
   - unavailable_function
   - unneeded_parentheses_in_closure_argument
