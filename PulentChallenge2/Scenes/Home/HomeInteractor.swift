@@ -30,6 +30,14 @@ extension HomeInteractor: HomeInteractorInterface {
     }
 
     private func parseToViewModel(song: SongModel) -> SongViewModel {
-        .init(songName: song.trackName)
+        .init(
+            songName: song.trackName,
+            album: .init(
+                id: song.collectionId,
+                artist: song.artistName,
+                name: song.collectionName,
+                imageURL: song.artworkUrl100
+            )
+        )
     }
 }

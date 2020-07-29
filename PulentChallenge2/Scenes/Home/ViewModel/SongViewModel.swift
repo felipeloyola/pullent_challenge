@@ -8,4 +8,5 @@
 
 struct SongViewModel {
     let songName: String
+    let album: AlbumViewModel
 }

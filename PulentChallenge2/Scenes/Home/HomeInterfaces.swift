@@ -1,3 +1,4 @@
+//
 //  HomeInterfaces.swift
 //  PulentChallenge2
 //
@@ -10,6 +11,7 @@
 import UIKit
 
 protocol HomeWireframeInterface: WireframeInterface {
+    func openAlbum(album: AlbumViewModel)
 }
 
 protocol HomeViewInterface: ViewInterface {

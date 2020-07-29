@@ -43,6 +43,10 @@ final class HomeViewController: UIViewController, UITableViewDelegate, UITableVi
         return UITableViewCell()
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.presenter.selectSong(song: self.songs[indexPath.row])
+    }
+
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         self.presenter.requestSearch(text: searchBar.text ?? "")
     }

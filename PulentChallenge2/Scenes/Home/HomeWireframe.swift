@@ -28,4 +28,7 @@ final class HomeWireframe: BaseWireframe {
 // MARK: - Extensions -
 
 extension HomeWireframe: HomeWireframeInterface {
+    func openAlbum(album: AlbumViewModel) {
+        navigationController?.pushWireframe(AlbumWireframe(album: album))
+    }
 }

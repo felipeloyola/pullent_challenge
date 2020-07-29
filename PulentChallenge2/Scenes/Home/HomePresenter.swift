@@ -41,6 +41,7 @@ extension HomePresenter: HomePresenterInterface, HomeInteractorOutput {
     }
 
     func selectSong(song: SongViewModel) {
+        self.wireframe.openAlbum(album: song.album)
     }
 
     func presentSearchResults(songs: [SongViewModel]) {
