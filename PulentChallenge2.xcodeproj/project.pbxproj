@@ -35,6 +35,12 @@
 		129E02B924D10EA000CFCD03 /* AlbumInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E02B324D10EA000CFCD03 /* AlbumInteractor.swift */; };
 		129E02BA24D10EA000CFCD03 /* AlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 129E02B424D10EA000CFCD03 /* AlbumViewController.xib */; };
 		129E02BB24D10EA000CFCD03 /* AlbumWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E02B524D10EA000CFCD03 /* AlbumWireframe.swift */; };
+		129E02BE24D111DE00CFCD03 /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E02BD24D111DE00CFCD03 /* AlbumViewModel.swift */; };
+		129E02C124D11EBC00CFCD03 /* SongInAlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E02BF24D11EBC00CFCD03 /* SongInAlbumCell.swift */; };
+		129E02C224D11EBC00CFCD03 /* SongInAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 129E02C024D11EBC00CFCD03 /* SongInAlbumCell.xib */; };
+		129E02C424D11F2300CFCD03 /* AlbumSongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E02C324D11F2300CFCD03 /* AlbumSongViewModel.swift */; };
+		129E02CA24D12B0400CFCD03 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129E02C924D12B0400CFCD03 /* AlamofireImage.framework */; };
+		129E02CB24D12B0400CFCD03 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 129E02C924D12B0400CFCD03 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				129E02A624D0E88800CFCD03 /* Alamofire.framework in Embed Frameworks */,
+				129E02CB24D12B0400CFCD03 /* AlamofireImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +100,11 @@
 		129E02B324D10EA000CFCD03 /* AlbumInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumInteractor.swift; sourceTree = "<group>"; };
 		129E02B424D10EA000CFCD03 /* AlbumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumViewController.xib; sourceTree = "<group>"; };
 		129E02B524D10EA000CFCD03 /* AlbumWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumWireframe.swift; sourceTree = "<group>"; };
+		129E02BD24D111DE00CFCD03 /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
+		129E02BF24D11EBC00CFCD03 /* SongInAlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongInAlbumCell.swift; sourceTree = "<group>"; };
+		129E02C024D11EBC00CFCD03 /* SongInAlbumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongInAlbumCell.xib; sourceTree = "<group>"; };
+		129E02C324D11F2300CFCD03 /* AlbumSongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSongViewModel.swift; sourceTree = "<group>"; };
+		129E02C924D12B0400CFCD03 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				129E02A524D0E88800CFCD03 /* Alamofire.framework in Frameworks */,
+				129E02CA24D12B0400CFCD03 /* AlamofireImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +234,7 @@
 		129E02A324D0E88800CFCD03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				129E02C924D12B0400CFCD03 /* AlamofireImage.framework */,
 				129E02A424D0E88800CFCD03 /* Alamofire.framework */,
 			);
 			name = Frameworks;
@@ -237,14 +251,26 @@
 		129E02AF24D10E5B00CFCD03 /* Album */ = {
 			isa = PBXGroup;
 			children = (
+				129E02BC24D111C300CFCD03 /* ViewModel */,
 				129E02B024D10EA000CFCD03 /* AlbumInterfaces.swift */,
 				129E02B124D10EA000CFCD03 /* AlbumPresenter.swift */,
 				129E02B224D10EA000CFCD03 /* AlbumViewController.swift */,
 				129E02B324D10EA000CFCD03 /* AlbumInteractor.swift */,
 				129E02B424D10EA000CFCD03 /* AlbumViewController.xib */,
 				129E02B524D10EA000CFCD03 /* AlbumWireframe.swift */,
+				129E02BF24D11EBC00CFCD03 /* SongInAlbumCell.swift */,
+				129E02C024D11EBC00CFCD03 /* SongInAlbumCell.xib */,
 			);
 			path = Album;
+			sourceTree = "<group>";
+		};
+		129E02BC24D111C300CFCD03 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				129E02BD24D111DE00CFCD03 /* AlbumViewModel.swift */,
+				129E02C324D11F2300CFCD03 /* AlbumSongViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +362,7 @@
 				129E026124CFAAC200CFCD03 /* Assets.xcassets in Resources */,
 				129E028624D0E01900CFCD03 /* HomeViewController.xib in Resources */,
 				129E02BA24D10EA000CFCD03 /* AlbumViewController.xib in Resources */,
+				129E02C224D11EBC00CFCD03 /* SongInAlbumCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +403,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -400,6 +428,7 @@
 				129E02B724D10EA000CFCD03 /* AlbumPresenter.swift in Sources */,
 				129E028224D0E01800CFCD03 /* HomeInterfaces.swift in Sources */,
 				129E02A924D0EF8000CFCD03 /* SongSearchResponseModel.swift in Sources */,
+				129E02C424D11F2300CFCD03 /* AlbumSongViewModel.swift in Sources */,
 				129E02B624D10EA000CFCD03 /* AlbumInterfaces.swift in Sources */,
 				129E029424D0E0CB00CFCD03 /* BaseWireframe.swift in Sources */,
 				129E02A124D0E63D00CFCD03 /* SongModel.swift in Sources */,
@@ -411,8 +440,10 @@
 				129E02BB24D10EA000CFCD03 /* AlbumWireframe.swift in Sources */,
 				129E028724D0E01900CFCD03 /* HomeWireframe.swift in Sources */,
 				129E02B924D10EA000CFCD03 /* AlbumInteractor.swift in Sources */,
+				129E02C124D11EBC00CFCD03 /* SongInAlbumCell.swift in Sources */,
 				129E029124D0E0CB00CFCD03 /* PresenterInterface.swift in Sources */,
 				129E02B824D10EA000CFCD03 /* AlbumViewController.swift in Sources */,
+				129E02BE24D111DE00CFCD03 /* AlbumViewModel.swift in Sources */,
 				129E029324D0E0CB00CFCD03 /* ViewInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
