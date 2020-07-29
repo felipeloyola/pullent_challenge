@@ -29,5 +29,25 @@ final class HomePresenter {
 
 // MARK: - Extensions -
 
-extension HomePresenter: HomePresenterInterface {
+extension HomePresenter: HomePresenterInterface, HomeInteractorOutput {
+    func presentErrorOnServer() {
+        self.view.showErrorOnServer()
+    }
+
+    func load() {
+    }
+
+    func requestSearch(text: String) {
+        self.interactor.searchSongsBy(term: text)
+    }
+
+    func selectSong(song: SongViewModel) {
+    }
+
+    func presentSearchResults(songs: [SongViewModel]) {
+        self.view.showFoundSongs(songs: songs)
+        if songs.isEmpty {
+            self.view.showNoSongFound()
+        }
+    }
 }

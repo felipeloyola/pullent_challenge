@@ -14,10 +14,24 @@ protocol HomeWireframeInterface: WireframeInterface {
 }
 
 protocol HomeViewInterface: ViewInterface {
+    func showFoundSongs(songs: [SongViewModel])
+    func showErrorOnServer()
+    func showNoSongFound()
 }
 
 protocol HomePresenterInterface: PresenterInterface {
+    func load()
+    func requestSearch(text: String)
+    func selectSong(song: SongViewModel)
 }
 
+
+
 protocol HomeInteractorInterface: InteractorInterface {
+    func searchSongsBy(term: String)
+}
+
+protocol HomeInteractorOutput {
+    func presentSearchResults(songs: [SongViewModel])
+    func presentErrorOnServer()
 }

@@ -19,7 +19,9 @@ final class HomeWireframe: BaseWireframe {
         super.init(viewController: moduleViewController)
 
         let interactor = HomeInteractor()
+        interactor.songService = SongService()
         let presenter = HomePresenter(view: moduleViewController, interactor: interactor, wireframe: self)
+        interactor.output = presenter
         moduleViewController.presenter = presenter
     }
 

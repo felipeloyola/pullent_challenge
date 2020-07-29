@@ -11,9 +11,25 @@
 import Foundation
 
 final class HomeInteractor {
+    var output: HomeInteractorOutput!
+    var songService: ISongService!
 }
 
 // MARK: - Extensions -
 
 extension HomeInteractor: HomeInteractorInterface {
+    func searchSongsBy(term: String) {
+         self.songService.searchSongsBy(
+            term: term,
+            success: { songs in
+                self.output.presentSearchResults(songs: songs.map(self.parseToViewModel))
+            },
+            error: {
+                self.output.presentErrorOnServer()
+            })
+    }
+
+    private func parseToViewModel(song: SongModel) -> SongViewModel {
+        .init(songName: song.trackName)
+    }
 }
