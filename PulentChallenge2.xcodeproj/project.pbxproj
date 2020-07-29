@@ -16,12 +16,19 @@
 		129E028524D0E01900CFCD03 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E027F24D0E01800CFCD03 /* HomeInteractor.swift */; };
 		129E028624D0E01900CFCD03 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 129E028024D0E01800CFCD03 /* HomeViewController.xib */; };
 		129E028724D0E01900CFCD03 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E028124D0E01800CFCD03 /* HomeWireframe.swift */; };
-		129E028F24D0E0CB00CFCD03 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E028924D0E0CB00CFCD03 /* UIStoryboardExtension.swift */; };
 		129E029024D0E0CB00CFCD03 /* FormatterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E028A24D0E0CB00CFCD03 /* FormatterInterface.swift */; };
 		129E029124D0E0CB00CFCD03 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E028B24D0E0CB00CFCD03 /* PresenterInterface.swift */; };
 		129E029224D0E0CB00CFCD03 /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E028C24D0E0CB00CFCD03 /* InteractorInterface.swift */; };
 		129E029324D0E0CB00CFCD03 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E028D24D0E0CB00CFCD03 /* ViewInterface.swift */; };
 		129E029424D0E0CB00CFCD03 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E028E24D0E0CB00CFCD03 /* BaseWireframe.swift */; };
+		129E029924D0E41800CFCD03 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E029724D0E41800CFCD03 /* SongCell.swift */; };
+		129E029A24D0E41800CFCD03 /* SongCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 129E029824D0E41800CFCD03 /* SongCell.xib */; };
+		129E029F24D0E5B000CFCD03 /* SongService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E029E24D0E5B000CFCD03 /* SongService.swift */; };
+		129E02A124D0E63D00CFCD03 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E02A024D0E63D00CFCD03 /* SongModel.swift */; };
+		129E02A524D0E88800CFCD03 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129E02A424D0E88800CFCD03 /* Alamofire.framework */; };
+		129E02A624D0E88800CFCD03 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 129E02A424D0E88800CFCD03 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		129E02A924D0EF8000CFCD03 /* SongSearchResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E02A824D0EF8000CFCD03 /* SongSearchResponseModel.swift */; };
+		129E02AE24D0FFF300CFCD03 /* SongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E02AD24D0FFF300CFCD03 /* SongViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +40,20 @@
 			remoteInfo = PulentChallenge2;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		129E02A724D0E88800CFCD03 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				129E02A624D0E88800CFCD03 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		129E025424CFAABE00CFCD03 /* PulentChallenge2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulentChallenge2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,12 +69,18 @@
 		129E027F24D0E01800CFCD03 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		129E028024D0E01800CFCD03 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		129E028124D0E01800CFCD03 /* HomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
-		129E028924D0E0CB00CFCD03 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		129E028A24D0E0CB00CFCD03 /* FormatterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatterInterface.swift; sourceTree = "<group>"; };
 		129E028B24D0E0CB00CFCD03 /* PresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
 		129E028C24D0E0CB00CFCD03 /* InteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
 		129E028D24D0E0CB00CFCD03 /* ViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
 		129E028E24D0E0CB00CFCD03 /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		129E029724D0E41800CFCD03 /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
+		129E029824D0E41800CFCD03 /* SongCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongCell.xib; sourceTree = "<group>"; };
+		129E029E24D0E5B000CFCD03 /* SongService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongService.swift; sourceTree = "<group>"; };
+		129E02A024D0E63D00CFCD03 /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
+		129E02A424D0E88800CFCD03 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		129E02A824D0EF8000CFCD03 /* SongSearchResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongSearchResponseModel.swift; path = ../Service/SongSearchResponseModel.swift; sourceTree = "<group>"; };
+		129E02AD24D0FFF300CFCD03 /* SongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129E02A524D0E88800CFCD03 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +108,7 @@
 				129E025624CFAABE00CFCD03 /* PulentChallenge2 */,
 				129E026D24CFAAC200CFCD03 /* PulentChallenge2Tests */,
 				129E025524CFAABE00CFCD03 /* Products */,
+				129E02A324D0E88800CFCD03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +124,7 @@
 		129E025624CFAABE00CFCD03 /* PulentChallenge2 */ = {
 			isa = PBXGroup;
 			children = (
+				129E029B24D0E56D00CFCD03 /* Core */,
 				129E028824D0E09F00CFCD03 /* VIPER */,
 				129E027A24CFB1A200CFCD03 /* Scenes */,
 				129E025724CFAABE00CFCD03 /* AppDelegate.swift */,
@@ -124,12 +154,15 @@
 		129E027B24D0DFF500CFCD03 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				129E02AC24D0FADD00CFCD03 /* ViewModel */,
 				129E027C24D0E01800CFCD03 /* HomeInterfaces.swift */,
 				129E027D24D0E01800CFCD03 /* HomePresenter.swift */,
 				129E027E24D0E01800CFCD03 /* HomeViewController.swift */,
 				129E027F24D0E01800CFCD03 /* HomeInteractor.swift */,
 				129E028024D0E01800CFCD03 /* HomeViewController.xib */,
 				129E028124D0E01800CFCD03 /* HomeWireframe.swift */,
+				129E029724D0E41800CFCD03 /* SongCell.swift */,
+				129E029824D0E41800CFCD03 /* SongCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -141,10 +174,51 @@
 				129E028A24D0E0CB00CFCD03 /* FormatterInterface.swift */,
 				129E028C24D0E0CB00CFCD03 /* InteractorInterface.swift */,
 				129E028B24D0E0CB00CFCD03 /* PresenterInterface.swift */,
-				129E028924D0E0CB00CFCD03 /* UIStoryboardExtension.swift */,
 				129E028D24D0E0CB00CFCD03 /* ViewInterface.swift */,
 			);
 			path = VIPER;
+			sourceTree = "<group>";
+		};
+		129E029B24D0E56D00CFCD03 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				129E029D24D0E57B00CFCD03 /* Service */,
+				129E029C24D0E57500CFCD03 /* Model */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		129E029C24D0E57500CFCD03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				129E02A824D0EF8000CFCD03 /* SongSearchResponseModel.swift */,
+				129E02A024D0E63D00CFCD03 /* SongModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		129E029D24D0E57B00CFCD03 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				129E029E24D0E5B000CFCD03 /* SongService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		129E02A324D0E88800CFCD03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				129E02A424D0E88800CFCD03 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		129E02AC24D0FADD00CFCD03 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				129E02AD24D0FFF300CFCD03 /* SongViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +232,8 @@
 				129E025124CFAABE00CFCD03 /* Frameworks */,
 				129E025224CFAABE00CFCD03 /* Resources */,
 				129E027924CFAEA000CFCD03 /* swiftlint */,
+				129E02A724D0E88800CFCD03 /* Embed Frameworks */,
+				129E02A224D0E75B00CFCD03 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -229,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129E029A24D0E41800CFCD03 /* SongCell.xib in Resources */,
 				129E026424CFAAC200CFCD03 /* LaunchScreen.storyboard in Resources */,
 				129E026124CFAAC200CFCD03 /* Assets.xcassets in Resources */,
 				129E028624D0E01900CFCD03 /* HomeViewController.xib in Resources */,
@@ -263,6 +340,25 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		129E02A224D0E75B00CFCD03 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncarthage copy-frameworks\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -270,16 +366,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129E029F24D0E5B000CFCD03 /* SongService.swift in Sources */,
 				129E029024D0E0CB00CFCD03 /* FormatterInterface.swift in Sources */,
+				129E029924D0E41800CFCD03 /* SongCell.swift in Sources */,
 				129E028324D0E01900CFCD03 /* HomePresenter.swift in Sources */,
 				129E028224D0E01800CFCD03 /* HomeInterfaces.swift in Sources */,
+				129E02A924D0EF8000CFCD03 /* SongSearchResponseModel.swift in Sources */,
 				129E029424D0E0CB00CFCD03 /* BaseWireframe.swift in Sources */,
+				129E02A124D0E63D00CFCD03 /* SongModel.swift in Sources */,
+				129E02AE24D0FFF300CFCD03 /* SongViewModel.swift in Sources */,
 				129E025824CFAABE00CFCD03 /* AppDelegate.swift in Sources */,
 				129E028524D0E01900CFCD03 /* HomeInteractor.swift in Sources */,
 				129E028424D0E01900CFCD03 /* HomeViewController.swift in Sources */,
 				129E029224D0E0CB00CFCD03 /* InteractorInterface.swift in Sources */,
 				129E028724D0E01900CFCD03 /* HomeWireframe.swift in Sources */,
-				129E028F24D0E0CB00CFCD03 /* UIStoryboardExtension.swift in Sources */,
 				129E029124D0E0CB00CFCD03 /* PresenterInterface.swift in Sources */,
 				129E029324D0E0CB00CFCD03 /* ViewInterface.swift in Sources */,
 			);
@@ -433,6 +533,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PulentChallenge2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +554,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PulentChallenge2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
