@@ -11,9 +11,21 @@
 import Foundation
 
 final class AlbumInteractor {
+    var songService: ISongService!
+    var output: AlbumInteractorOutput!
 }
 
 // MARK: - Extensions -
 
 extension AlbumInteractor: AlbumInteractorInterface {
+    func getSongs(albumId: Int) {
+        self.songService.getAlbumSongs(albumId: albumId, success: { songs in
+            self.output.presentSongs(songs: songs.map(self.parseSongs))
+        }, error: {
+            self.output.presentErrorOnServer()
+        })
+    }
+    private func parseSongs(song: SongModel) -> AlbumSongViewModel {
+        .init(position: song.trackNumber, name: song.trackName)
+    }
 }

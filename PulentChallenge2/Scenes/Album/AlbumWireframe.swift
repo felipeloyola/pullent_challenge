@@ -11,18 +11,23 @@
 import UIKit
 
 final class AlbumWireframe: BaseWireframe {
-
     // MARK: - Module setup -
 
-    init() {
+    init(album: AlbumViewModel) {
         let moduleViewController = AlbumViewController()
         super.init(viewController: moduleViewController)
 
         let interactor = AlbumInteractor()
-        let presenter = AlbumPresenter(view: moduleViewController, interactor: interactor, wireframe: self)
+        interactor.songService = SongService()
+        let presenter = AlbumPresenter(
+            view: moduleViewController,
+            interactor: interactor,
+            wireframe: self,
+            album: album
+        )
+        interactor.output = presenter
         moduleViewController.presenter = presenter
     }
-
 }
 
 // MARK: - Extensions -

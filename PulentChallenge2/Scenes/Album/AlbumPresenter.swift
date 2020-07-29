@@ -11,23 +11,42 @@
 import Foundation
 
 final class AlbumPresenter {
-
     // MARK: - Private properties -
 
     private unowned let view: AlbumViewInterface
     private let interactor: AlbumInteractorInterface
     private let wireframe: AlbumWireframeInterface
+    private let album: AlbumViewModel
 
     // MARK: - Lifecycle -
 
-    init(view: AlbumViewInterface, interactor: AlbumInteractorInterface, wireframe: AlbumWireframeInterface) {
+    init(view: AlbumViewInterface,
+         interactor: AlbumInteractorInterface,
+         wireframe: AlbumWireframeInterface,
+         album: AlbumViewModel) {
         self.view = view
         self.interactor = interactor
         self.wireframe = wireframe
+        self.album = album
     }
 }
 
 // MARK: - Extensions -
 
-extension AlbumPresenter: AlbumPresenterInterface {
+extension AlbumPresenter: AlbumPresenterInterface, AlbumInteractorOutput {
+    func load() {
+        self.interactor.getSongs(albumId: self.album.id)
+        self.view.showAlbum(album: self.album)
+    }
+
+    func presentSongs(songs: [AlbumSongViewModel]) {
+        self.view.showSongs(songs: songs)
+
+        if songs.isEmpty {
+            self.view.showNoSongFoundAlert()
+        }
+    }
+
+    func presentErrorOnServer() {
+    }
 }
